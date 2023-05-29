@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" prefHeight="500.0" prefWidth="1000.0" spacing="20.0" styleClass="container" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxCat.login">
+   <AnchorPane prefHeight="500.0" prefWidth="424.0" style="-fx-background-color: ffcfd9;">
+      <children>
+         <ImageView fitHeight="150.0" fitWidth="255.0" layoutX="137.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@patte.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="102.0" layoutY="342.0" text="YourCatApp">
+            <font>
+               <Font name="ArnoPro-Bold" size="50.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+    <VBox spacing="20.0">
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label alignment="CENTER" styleClass="login-label">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+                <text>Login</text>
+            </Label>
+         <ImageView fitHeight="49.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@cadenas.png" />
+            </image>
+         </ImageView>
+        </VBox>
+
+
+        <HBox spacing="10.0">
+            <Label styleClass="username-label" text="Username" />
+            <TextField fx:id="id_user" prefHeight="25.0" prefWidth="143.0" promptText="Type your username" styleClass="username-input" />
+        </HBox>
+
+        <HBox spacing="10.0">
+            <Label styleClass="password-label" text="Password:" />
+            <PasswordField fx:id="password" promptText="Type your password" styleClass="password-input" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button fx:id="okBtn" onAction="#okClicked" styleClass="button" text="LOGIN" />
+            <Button fx:id="cancelBtn" onAction="#cancelClicked" styleClass="button" text="cancel" />
+        </HBox>
+    </VBox>
+</HBox>

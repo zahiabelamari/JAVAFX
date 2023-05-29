@@ -1,0 +1,20 @@
+[
+  {
+    "id": 56,
+    "nom": "lina",
+    "race": "eurp",
+    "sexe": "femelle",
+    "anneeN": 2010,
+    "poids": 12
+
+  },
+  {
+    "id": 20,
+    "nom": "leo",
+    "race": "siamois",
+    "sexe": "male",
+    "anneeN": 2020,
+    "poids": 23
+
+  }
+]

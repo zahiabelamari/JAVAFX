@@ -1,0 +1,4 @@
+1	aymn	eur	male	2001	22.0	
+2	luna	eur	fem	2021	24.0	
+3	mimi	eurp	femelle	2001	12.0	
+4	dghj	shj	dhgj	2222	22.0	

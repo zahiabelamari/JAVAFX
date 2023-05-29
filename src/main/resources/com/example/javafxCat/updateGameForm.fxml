@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: ffcfd9;" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxCat.addCat">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+
+    </rowConstraints>
+    <children>
+        <HBox styleClass="button-container" GridPane.columnSpan="3" GridPane.rowIndex="0">
+            <Button mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label styleClass="form-title" text="Update Cat">
+            <font>
+               <Font name="ArnoPro-Bold" size="20.0" />
+            </font></Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="button_clear" mnemonicParsing="false" onAction="#onClearButtonClick" text="Clear" />
+        </HBox>
+        <Label text="Nom" GridPane.rowIndex="1">
+         <font>
+            <Font name="ArnoPro-Smbd" size="18.0" />
+         </font></Label>
+        <TextField fx:id="tf_name" alignment="CENTER" prefHeight="25.0" prefWidth="315.0" promptText="nom" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+        <Label text="Race" GridPane.rowIndex="2">
+         <font>
+            <Font name="ArnoPro-Smbd" size="18.0" />
+         </font></Label>
+        <TextField fx:id="tf_race" alignment="CENTER" promptText="race" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+        <Label text="Sexe" GridPane.rowIndex="3">
+         <font>
+            <Font name="ArnoPro-Smbd" size="18.0" />
+         </font></Label>
+        <TextField fx:id="tf_sexe" alignment="CENTER" prefHeight="25.0" prefWidth="115.0" promptText="sexe" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+        <Label text="AnneeN" GridPane.rowIndex="4">
+         <font>
+            <Font name="ArnoPro-Smbd" size="18.0" />
+         </font></Label>
+        <TextField fx:id="tf_annee" alignment="CENTER" promptText="anneeN" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+        <Label text="Poids" GridPane.rowIndex="5">
+         <font>
+            <Font name="ArnoPro-Smbd" size="18.0" />
+         </font></Label>
+        <TextField fx:id="tf_poids" alignment="CENTER" prefHeight="25.0" prefWidth="276.0" promptText="poids" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+        <Button fx:id="button_save" mnemonicParsing="false" onAction="#onHelloButtonClick" styleClass="fit-content-button" text="Update Cat" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" /> <!-- Updated saveButton properties -->
+    </children>
+</GridPane>
